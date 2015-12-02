@@ -1,0 +1,47 @@
+
+TEST test1
+
+TEST test2
+
+TEST testA
+f was not declared!
+line: 11    pos: 14
+f()
+
+TEST testB
+Trying to call a non-function:
+line: 12    pos: 14
+j()
+
+TEST testC
+Type mismatch in
+line: 9    pos: 9
+g := 10
+
+
+TEST testD
+Not an array
+line: 11    pos: 9
+g[0]
+
+TEST testE
+Argument count mismatch:
+line: 12    pos: 14
+findmax(1, 2, 3, 4)
+
+TEST testF
+Argument type mismatch in slot 2 of 
+line: 12    pos: 15
+f(5, 10)
+
+TEST testG
+print expression must be integer type
+line: 11    pos: 22
+PRINT f(1, 21)
+
+
+TEST testH
+Return type mismatch
+line: 5    pos: 22
+RETURN (a - b)
+

@@ -1,0 +1,354 @@
+
+***** Static Analysis *****
+
+TEST test1
+40
+40
+30
+10
+
+TEST test2
+19
+17
+101
+
+TEST testA
+
+TEST testB
+
+TEST testC
+
+TEST testD
+
+TEST testE
+
+TEST testF
+
+TEST testG
+
+TEST testH
+
+      *****     
+
+TEST test1
+
+TEST test2
+
+TEST testA
+f was not declared!
+line: 11    pos: 14
+f()
+
+TEST testB
+Trying to call a non-function:
+line: 12    pos: 14
+j()
+
+TEST testC
+Type mismatch in
+line: 9    pos: 9
+g := 10
+
+
+TEST testD
+Not an array
+line: 11    pos: 9
+g[0]
+
+TEST testE
+Argument count mismatch:
+line: 12    pos: 14
+findmax(1, 2, 3, 4)
+
+TEST testF
+Argument type mismatch in slot 2 of 
+line: 12    pos: 15
+f(5, 10)
+
+TEST testG
+print expression must be integer type
+line: 11    pos: 22
+PRINT f(1, 21)
+
+
+TEST testH
+Return type mismatch
+line: 5    pos: 22
+RETURN (a - b)
+
+
+***** Static Analysis *****
+
+***** Linearization *****
+
+TEST test1
+1
+3
+6
+10
+15
+21
+28
+36
+45
+55
+
+TEST test2
+1
+2
+3
+4
+5
+6
+
+TEST test3
+0
+0
+-1
+1
+-2
+2
+-3
+3
+-4
+4
+-5
+5
+
+TEST test4
+40
+40
+30
+10
+
+TEST test5
+11
+14
+17
+61
+64
+67
+111
+114
+117
+161
+164
+167
+
+TEST test6
+92
+92
+100
+120
+94
+94
+100
+120
+96
+96
+100
+120
+98
+98
+100
+120
+
+TEST test7
+0
+2
+2
+4
+4
+6
+6
+8
+8
+
+TEST test8
+40
+40
+30
+10
+
+TEST test9
+1
+5
+10
+10
+5
+1
+-999999
+1
+6
+15
+20
+15
+6
+1
+-999999
+
+TEST test10
+19
+17
+101
+
+      *****     
+
+TEST test1
+
+TEST test2
+
+TEST test3
+
+TEST test4
+
+TEST test5
+
+TEST test6
+
+TEST test7
+
+TEST test8
+
+TEST test9
+
+TEST test10
+
+***** Linearization *****
+
+***** Code Generation *****
+
+TEST test1
+1
+3
+6
+10
+15
+21
+28
+36
+45
+55
+
+TEST test2
+1
+2
+3
+4
+5
+6
+
+TEST test3
+0
+0
+-1
+1
+-2
+2
+-3
+3
+-4
+4
+-5
+5
+
+TEST test4
+40
+40
+30
+10
+
+TEST test5
+11
+14
+17
+61
+64
+67
+111
+114
+117
+161
+164
+167
+
+TEST test6
+92
+92
+100
+120
+94
+94
+100
+120
+96
+96
+100
+120
+98
+98
+100
+120
+
+TEST test7
+0
+2
+2
+4
+4
+6
+6
+8
+8
+
+TEST test8
+40
+40
+30
+10
+
+TEST test9
+1
+5
+10
+10
+5
+1
+-999999
+1
+6
+15
+20
+15
+6
+1
+-999999
+
+TEST test10
+1977021952
+1977021952
+1977021952
+
+      *****     
+
+TEST test1
+
+TEST test2
+
+TEST test3
+
+TEST test4
+
+TEST test5
+
+TEST test6
+
+TEST test7
+
+TEST test8
+
+TEST test9
+
+TEST test10
+
+***** Code Generation *****
